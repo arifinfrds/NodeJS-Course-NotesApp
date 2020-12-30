@@ -16,7 +16,7 @@ yargs.command({
     command: `remove`,
     description: `Remove a note`,
     handler: function () {
-        console.log(`Removing a note!`);
+        console.log(`Removing a note!`)
     }
 
 })
@@ -26,7 +26,7 @@ yargs.command({
     command: `read`,
     description: `Read a note`,
     handler: function () {
-        console.log(`Reading a note!`);
+        console.log(`Reading a note!`)
     }
 })
 
@@ -35,7 +35,7 @@ yargs.command({
     command: `list`,
     description: `show list`,
     handler: function () {
-        console.log(`Show list of notes!`);
+        console.log(`Show list of notes!`)
     }
 })
 
