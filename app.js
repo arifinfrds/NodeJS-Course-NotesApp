@@ -21,7 +21,6 @@ yargs.command({
 
 })
 
-
 // MARK: Read
 yargs.command({
     command: `read`,
@@ -31,5 +30,13 @@ yargs.command({
     }
 })
 
+// MARK: List
+yargs.command({
+    command: `list`,
+    description: `show list`,
+    handler: function () {
+        console.log(`Show list of notes!`);
+    }
+})
 
 console.log(yargs.argv)
