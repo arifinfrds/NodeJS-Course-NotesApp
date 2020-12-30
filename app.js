@@ -2,7 +2,7 @@ const chalk = require('chalk')
 const getNotes = require('./notes.js')
 const yargs = require('yargs')
 
-// MARK: - Add
+// MARK: Add
 yargs.command({
     command: 'add', 
     description: 'Adding a note',
@@ -19,6 +19,16 @@ yargs.command({
         console.log(`Removing a note!`);
     }
 
+})
+
+
+// MARK: Read
+yargs.command({
+    command: `read`,
+    description: `Read a note`,
+    handler: function () {
+        console.log(`Reading a note!`);
+    }
 })
 
 
