@@ -6,8 +6,15 @@ const yargs = require('yargs')
 yargs.command({
     command: 'add', 
     description: 'Adding a note',
-    handler: function () {
-        console.log(`Adding a note!`)
+    builder: {
+        title: {
+            description: `Note title`,
+            demandOption: true,
+            type: 'string'
+        }
+    },
+    handler: function (argv) {
+        console.log(`title: `, argv.title)
     }
 })
 
