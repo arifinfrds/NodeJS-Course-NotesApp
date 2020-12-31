@@ -20,7 +20,7 @@ yargs.command({
     },
     handler: function (argv) {
         console.log(`title : `, argv.title)
-        console.log(`body  : `, argv.body);
+        console.log(`body  : `, argv.body)
     }
 })
 
